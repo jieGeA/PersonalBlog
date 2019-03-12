@@ -20,12 +20,19 @@ h2{
 }
 .content{
     padding: 8px;
-    border: 1px solid #EEEEEE;
-    clear: both;
+    border: 1px solid #eee;
     width: 95%;
-    margin: auto;
-    margin-top: 10px;
+    margin: 10px auto 0 auto;
     font-size: 12px;
+}
+.content ul{
+    margin-left: 3em;
+}
+.content ul li{
+    margin: 8px 0;
+}
+.content ul li a{
+    color: #000;
 }
 footer{
     width: 100%;

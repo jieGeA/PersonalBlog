@@ -7,17 +7,29 @@
 body{
     background-image: url("../img/bg.jpg");
 }
+html,body{
+    width: 100%;
+}
 /*导入字体包*/
 @font-face{
     font-family: "Myicon";
     src:url("../font/glyphicons-halflings-regular.woff2");
 }
+/*header start*/
 .header{
     background: #191818;
     height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.header::after{
+    content: "";
+    clear: both;
+    display: block;
 }
 .container{
-    position: relative;
     height: 50px;
     width: 1170px;
     margin: 0 auto;
@@ -70,10 +82,13 @@ body{
     border-radius: 4px;
     outline: none;
 }
+
+
+/*content start*/
 .content{
     width: 1170px;
     position: relative;
-    margin: 30px auto 0;
+    margin: 80px auto 0;
 }
 .content .left{
     display: inline-block;
@@ -91,48 +106,6 @@ body{
     clear: both;
     display: block;
 }
-.article_list{
-    width: 100%;
-    border-radius: 5px;
-    margin-top: 15px;
-}
-.article{
-    background: #fff;
-    display: inline-block;
-    width: 100%;
-    border-radius:5px;
-    box-shadow: 1px 2px 2px #888;
-    overflow: hidden;
-    text-align: left;
-    margin-top: 15px;
-}
-.article_title{
-    display: inline-block;
-    font-size: 20px;
-    color: #13102b;
-    padding: 20px 10px 5px 10px;
-}
-.article_title:hover{
-    color: #337abc;
-}
-.article_content{
-    font-size: 14px;
-    color: #13102b;
-    padding: 0 10px 20px 10px;
-    word-wrap: break-word;
-    word-break: break-all;
-    overflow: hidden;
-}
-.article_foot{
-    display: inline-block;
-    color: #eee;
-    background: #1f1f1f;
-    width: 100%;
-    padding: 5px 15px;
-}
-.article_foot > a{
-    color: #eee;
-}
 .right_module{
     display: inline-block;
     width: 100%;
@@ -142,6 +115,7 @@ body{
     text-align: left;
     padding: 0 15px 25px 15px;
     margin-bottom: 20px ;
+    box-sizing: border-box;
 }
 .right_module > div{
     display: block;
@@ -184,9 +158,8 @@ body{
 .right_module > span > a {
     color: #fff;
 }
-footer{
+.footer{
     width: 100%;
-    margin-bottom: 0;
     padding: 20px 0;
     color: #a2a2a2;
     text-align: center;

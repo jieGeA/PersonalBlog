@@ -2,5 +2,7 @@
 
 # dependencies
 /node_modules
-/.idea
+
+# Editor directories and files
+.idea
 

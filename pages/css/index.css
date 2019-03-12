@@ -21,3 +21,45 @@
     margin-bottom: 5px;
     color: slateblue;
 }
+.article_list{
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.article{
+    background: #fff;
+    display: inline-block;
+    width: 100%;
+    border-radius:5px;
+    box-shadow: 1px 2px 2px #888;
+    overflow: hidden;
+    text-align: left;
+    margin-top: 15px;
+}
+.article_title{
+    display: inline-block;
+    font-size: 20px;
+    color: #13102b;
+    padding: 20px 10px 5px 10px;
+}
+.article_title:hover{
+    color: #337abc;
+}
+.article_content{
+    font-size: 14px;
+    color: #13102b;
+    padding: 0 10px 20px 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+}
+.article_foot{
+    display: inline-block;
+    color: #eee;
+    background: #1f1f1f;
+    width: 100%;
+    padding: 5px 15px;
+}
+.article_foot > a{
+    color: #eee;
+}
