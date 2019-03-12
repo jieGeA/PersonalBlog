@@ -1,0 +1,23 @@
+.every_day{
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 3px 4px 3px #888;
+    padding: 10px 15px;
+}
+.every_day span::before{
+    font-family: Myicon;
+    font-size: 12px;
+    content: "\e122";
+    color: slateblue;
+    position: relative;
+    display: block;
+    height: 0px;
+    left: 54px;
+}
+.every_day > span{
+    display: block;
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: slateblue;
+}
