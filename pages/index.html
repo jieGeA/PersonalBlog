@@ -29,6 +29,7 @@
         <div class="every_day" id="every_day">
             <span>每日一句</span>
             <p>{{content}}</p>
+            <p style="text-align: right">————{{author}}</p>
         </div>
         <div class="article_list" id="article_list">
             <div class="article" v-for="items in articleList" :key="items.id">
@@ -93,6 +94,7 @@
     <p>Copyright © 2019</p>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="./js/index.js"></script>
 <script src="./js/base.js"></script>
 </body>

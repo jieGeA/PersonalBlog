@@ -2,10 +2,16 @@
 const everyday = new Vue({
     el:"#every_day",
     data:{
-        content:"fsdfsdf"
+        content:"fsdfsdf",
+        author:"lkjkj"
     },
     created () {
         //请求每日一句数据
+        axios.get("/getEverydayMsg").then(res =>{
+            console.log(res.data)
+            this.content = res.data[0].content;
+            this.author = res.data[0].author;
+        })
     }
 })
 //blog 文章vm
